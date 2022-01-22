@@ -159,7 +159,7 @@ function renderStopwatchHand(x,y,time){
 }
 function renderScore(){
   for(var i=0;i<score;i++){
-    renderStar(138-overallGridSize/2,60+(i%5*20));
+    renderStar(138-overallGridSize/2-(Math.floor(i/9)),60+(i%9*20));
   }
 }
 function renderStar(x,y){
